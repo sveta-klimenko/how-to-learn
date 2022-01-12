@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
@@ -86,6 +87,7 @@
   width: 183px;
   height: 35px;
   background-image: url("../images/logo_place_footer.svg");
+  align-self: flex-start;
 }
 
 .description {
@@ -162,14 +164,16 @@
 
 .table__cell{
   width: 250px;
+  margin: 60px 0 0 0;
 }
 
-.table__header {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
-.table__paragraph{
+.table__text{
   margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
@@ -194,7 +198,7 @@
   width: 648px;
   text-align: center;
   margin: auto;
-  padding: 100px;
+  padding: 100px 0 0 0;
 
 
 }
@@ -222,15 +226,18 @@
   padding: 90px 0 90px;
   overflow: hidden;
   position: relative;
-  z-index: 0;
 }
 
 .section-title_theme_dark {
   color: white;
   z-index: 2;
+  position: relative;
+
+
 }
 
 .section-subtitle_theme_dark {
+  position: relative;
   color: white;
   z-index: 3;
 }
@@ -243,13 +250,15 @@
   z-index: 4;
 }
 
-.kaufman_triangle {
+.kaufman__triangle {
   position: absolute;
   top: 0;
   right: -210px;
-  z-index: 1;
+  z-index: 0;
   width: 877px;
   height: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
+
 }
 
 .footer {
@@ -265,8 +274,7 @@
   width: 90%;
   align-items: stretch;
   display: flex;
-  flex-basis: 711px;
-  min-height: 350px;
+  min-height: 250px;
   justify-content: space-between;
   margin: 0 auto 0;
   position: relative;
@@ -280,8 +288,20 @@
   margin: 0;
   padding: 0;
   line-height: 30px;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.footer__author {
+  padding: 18px 0 18px;
+  margin: 0;
 }
 
 .footer__column-links {
@@ -291,6 +311,9 @@
   gap: 10px;
   display: flex;
   flex-direction: column;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__column-link {
@@ -298,14 +321,8 @@
   color: white;
 }
 
-.footer__author {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 18px 0 18px;
-}
-
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
