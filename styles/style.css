@@ -116,7 +116,6 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-
 }
 
 .two-columns__span-accent {
@@ -199,9 +198,8 @@
   text-align: center;
   margin: auto;
   padding: 100px 0 0 0;
-
-
 }
+
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
@@ -232,8 +230,6 @@
   color: white;
   z-index: 2;
   position: relative;
-
-
 }
 
 .section-subtitle_theme_dark {
@@ -258,7 +254,7 @@
   width: 877px;
   height: 877px;
   background-image: url("../images/kaufman-triangle.svg");
-
+  background-size: contain;
 }
 
 .footer {
@@ -267,7 +263,6 @@
   min-height: 350px;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .footer__columns {
@@ -308,7 +303,6 @@
   list-style: none;
   padding: 0;
   margin: 20px 0 16px;
-  gap: 10px;
   display: flex;
   flex-direction: column;
   line-height: 30px;
