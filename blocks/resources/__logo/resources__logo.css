@@ -2,10 +2,10 @@
   margin: 0;
   width: 270px;
   height: 38px;
-  text-align: center;
-  vertical-align: bottom;
+  object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.resources__logo:hover:nth-child(n) {
+.resources__logo:hover {
   opacity: 0.5;
 }
